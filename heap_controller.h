@@ -27,5 +27,6 @@ void		g_lst_addback(t_container **lst, t_container *new);
 void		g_lst_delone(t_container *lst, void (*del)(void*));
 t_container	*g_new_garbage(void *content);
 void		delete_one(void *data_ref);
+void		fill_zero(void *s, size_t len);
 
 #endif
