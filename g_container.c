@@ -6,7 +6,7 @@
 /*   By: mel-mouh <mel-mouh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/16 06:41:41 by mel-mouh          #+#    #+#             */
-/*   Updated: 2025/03/19 02:01:45 by mel-mouh         ###   ########.fr       */
+/*   Updated: 2025/03/19 02:02:14 by mel-mouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ void	*safe_alloc(size_t byts_count, int mode)
 	}
 	g_lst_addback(container(), new_node);
 	if (!mode)
-		ft_bzero(array, byts_count);
+		fill_zero(array, byts_count);
 	return (array);
 }
 
