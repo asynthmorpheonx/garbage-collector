@@ -6,11 +6,11 @@
 /*   By: mel-mouh <mel-mouh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/16 06:41:41 by mel-mouh          #+#    #+#             */
-/*   Updated: 2025/03/19 01:10:07 by mel-mouh         ###   ########.fr       */
+/*   Updated: 2025/03/19 02:01:45 by mel-mouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <g_collector.h>
+#include "heap_controller.h"
 
 t_container	**container(void)
 {
@@ -26,9 +26,9 @@ void	clear_container(void)
 
 void	delete_one(void *data_ref)
 {
-	t_container *prev;
-	t_container *lst;
-	t_container **head;
+	t_container	*prev;
+	t_container	*lst;
+	t_container	**head;
 
 	prev = NULL;
 	head = container();
@@ -51,7 +51,7 @@ void	delete_one(void *data_ref)
 
 void	*safe_alloc(size_t byts_count, int mode)
 {
-	void	*array;
+	void		*array;
 	t_container	*new_node;
 
 	array = malloc(byts_count);
@@ -71,4 +71,17 @@ void	*safe_alloc(size_t byts_count, int mode)
 	if (!mode)
 		ft_bzero(array, byts_count);
 	return (array);
+}
+
+void	fill_zero(void *s, size_t len)
+{
+	unsigned char	*str;
+	size_t			i;
+
+	if (!s)
+		return ;
+	str = (unsigned char *)s;
+	i = 0;
+	while (i < len)
+		str[i++] = 0;
 }

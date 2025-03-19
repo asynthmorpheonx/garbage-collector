@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   g_collector.h                                      :+:      :+:    :+:   */
+/*   heap_controller.h                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mel-mouh <mel-mouh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/18 23:47:07 by mel-mouh          #+#    #+#             */
-/*   Updated: 2025/03/19 00:52:36 by mel-mouh         ###   ########.fr       */
+/*   Updated: 2025/03/19 02:00:52 by mel-mouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HEAP_CONTROLLER
-# define HEAP_CONTROLLER
+#ifndef HEAP_CONTROLLER_H
+# define HEAP_CONTROLLER_H
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <libft.h>
 
 typedef struct s_container
 {
-	void			*content;
+	void				*content;
 	struct s_container	*next;
 }	t_container;
 

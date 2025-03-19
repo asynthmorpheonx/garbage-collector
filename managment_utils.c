@@ -6,11 +6,11 @@
 /*   By: mel-mouh <mel-mouh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:44:40 by mel-mouh          #+#    #+#             */
-/*   Updated: 2025/03/19 00:15:15 by mel-mouh         ###   ########.fr       */
+/*   Updated: 2025/03/19 02:01:04 by mel-mouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <g_collector.h>
+#include "heap_controller.h"
 
 void	g_lst_clear(t_container **lst, void (*del)(void*))
 {
